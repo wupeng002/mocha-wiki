@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: https://wupeng002.github.io/mocha-wiki/
+  baseUrl: wupeng002.github.io/mocha-wiki
   ignorePatterns:
     - private
     - templates
@@ -282,6 +282,7 @@ layout:
         right: []
     canvas: {}
     bases: {}
+
 
 
 
