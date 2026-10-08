@@ -6,17 +6,25 @@
   max-width: 1400px !important;
 }
 
-// 表格占满宽度
+// 表格占满宽度，固定布局
 #quartz-body table {
   width: 100% !important;
   display: table;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 #quartz-body table th,
 #quartz-body table td {
   padding: 8px 12px;
   word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+// 测试步骤列（第4列）固定 510px
+#quartz-body table th:nth-child(4),
+#quartz-body table td:nth-child(4) {
+  width: 510px;
+  min-width: 510px;
 }
 
 // 减少右侧栏占用
