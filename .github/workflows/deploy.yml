@@ -27,8 +27,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx quartz plugin install
-      - run: npx quartz build
+      - run: node ./quartz/bootstrap-cli.mjs plugin install
+      - run: node ./quartz/bootstrap-cli.mjs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
