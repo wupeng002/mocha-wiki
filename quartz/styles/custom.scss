@@ -1,3 +1,25 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// 扩大主内容区
+#quartz-body .center,
+#quartz-body #content {
+  max-width: 1400px !important;
+}
+
+// 表格占满宽度
+#quartz-body table {
+  width: 100% !important;
+  display: table;
+  table-layout: auto;
+}
+
+#quartz-body table th,
+#quartz-body table td {
+  padding: 8px 12px;
+  word-break: break-word;
+}
+
+// 减少右侧栏占用
+#quartz-body #right {
+  max-width: 280px;
+}
